@@ -1,0 +1,95 @@
+* {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    border-radius: 5px;
+}
+
+body {
+    padding-top: 15px;
+}
+
+.kalkulator {
+    height: 600px;
+    width: 400px;
+    background-color: beige;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 2px 4px rgba(000, 000, 000, 0.4),
+    inset 0px 0px 2px rgba(255, 255, 255, 0.7);
+}
+
+[name="przycisk"],
+[name="przycisk-delete"],
+[name="przycisk-wynik"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 5px rgba(000, 000, 000, 0.4),
+    inset 0px 0px 2px rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+}
+
+[name="przycisk"]:hover,
+[name="przycisk-delete"]:hover,
+[name="przycisk-wynik"]:hover {
+    border: 2px solid white;
+}
+
+.wyswietlacz {
+    width: 380px;
+    height: 92.5px;
+    background-color: dimgray;
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 1px 2px 5px rgba(000, 000, 000, 0.4),
+    inset 0px 0px 2px rgba(255, 255, 255, 0.7);
+}
+
+#wyswietlacz-tekst {
+    padding-right: 20px;
+    font-family: 'Economica', sans-serif;
+    font-size: 48px;
+}
+
+
+.duzy-przycisk {
+    height: 92.5px;
+    width: 187.5px;
+    background-color: black;
+    margin: 2.5px;
+}
+
+.maly-przycisk {
+    height: 92.5px;
+    width: 91.25px;
+    background-color: black;
+    color: white;
+    margin: 2.5px;
+}
+
+#delete {
+    background-color: dodgerblue;
+}
+
+#dzielenie,
+#mnozenie,
+#dodawanie,
+#odejmowanie,
+#pierwiastek {
+    background-color: forestgreen;
+}
+
+#wynik {
+    background-color: crimson;
+}
